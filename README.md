@@ -8,4 +8,4 @@
 
 ## VIEW
  - Hover dropdown menu   
-![screenshot](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/img/hover-dropdown-menu.png)
+![hover-dropdown-menu](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/hover-dropdown-menu.png)
