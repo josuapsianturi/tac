@@ -1,10 +1,11 @@
-<h1 align="center">Just For Fun</h1>
-
-<h3 align="center">
+<h1 align="center">
 
 [Tailwindcss](https://tailwindcss.com/) & [Alpinejs](https://github.com/alpinejs/alpine/) Components
 
-</h3>
+</h1>
 
-## DEMO
-![screenshot](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/img/hover-dropdown.png)
+> Just For Fun
+
+## VIEW
+ - Hover dropdown menu   
+![screenshot](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/img/hover-dropdown-menu.png)
