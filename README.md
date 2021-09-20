@@ -12,3 +12,6 @@
 
  - [Frequently asked questions](https://github.com/josuapsianturi/tac/blob/master/faq.html)   
 ![frequently-asked-questions](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/faq.png)
+
+ - [Navbar](https://github.com/josuapsianturi/tac/blob/master/navbar.html)   
+![navbar](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/navbar.png)
