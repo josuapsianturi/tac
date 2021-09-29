@@ -15,3 +15,7 @@
 
  - [Navbar](https://github.com/josuapsianturi/tac/blob/master/navbar.html)   
 ![navbar](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/navbar.png)
+
+ - [Tooltip](https://github.com/josuapsianturi/tac/blob/master/tooltip.html)   
+![tooltip](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/tooltip.png)
+
