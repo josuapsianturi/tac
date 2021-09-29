@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <!-- Tailwind CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Alpine CDN -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+<body class="bg-gray-100">
+<!-- Layout -->
+<div class="flex items-center justify-center min-h-screen space-x-8">
+
+    <!-- Notification Tooltip  -->
+    <div x-data="{ tooltip: false }" class="relative z-30 inline-flex tracking-wide">
+        <div @mouseover="tooltip = true" 
+            @mouseleave="tooltip = false" 
+            class="px-3 py-2 text-white bg-white rounded-md shadow cursor-pointer">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell">
+                <path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path>
+                <path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path>
+            </svg>
+        </div>
+
+        <div x-show="tooltip" 
+            x-transition.duration.300ms
+            x-cloak
+            class="relative">
+            <div class="absolute bottom-0 z-10 px-2 py-1 -mb-1.5 text-sm text-white transform 
+                -translate-x-full translate-y-full bg-gray-700 rounded-lg shadow-lg min-w-max">
+                You have no unread notifications
+            </div>
+            <svg class="absolute z-10 w-6 h-5 text-gray-700 transform translate-y-8 fill-current stroke-current -translate-x-9">
+                <rect x="12" y="-10" width="8" height="8" transform="rotate(45)" />
+            </svg>
+        </div>
+    </div>
+    <!-- End Notification Tooltip -->
+
+    <!-- Image Tooltip  -->
+    <div x-data="{ tooltip: false }" class="relative z-30 inline-flex tracking-wide">
+        <div @mouseover="tooltip = true" 
+            @mouseleave="tooltip = false" 
+            class="px-3 py-2 text-white bg-white rounded-md shadow cursor-pointer">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" aria-hidden="true">
+                <g>
+                    <path d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z"></path>
+                    <circle cx="8.868" cy="8.309" r="1.542"></circle>
+                </g>
+            </svg>
+        </div>
+
+        <div x-show="tooltip"  
+            x-transition.duration.300ms 
+            x-cloak
+            class="relative">
+            <div class="absolute bottom-0 z-10 px-2 py-1 -mb-1.5 text-sm text-white transform 
+                -translate-x-12 translate-y-full bg-gray-700 rounded-lg shadow-lg min-w-max">
+                Media
+            </div>
+        </div>
+    </div>
+    <!-- End Image Tooltip -->
+
+</div>
+<!-- End Layout -->
+</body>
+</html>
