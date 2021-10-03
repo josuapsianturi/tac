@@ -19,3 +19,7 @@
  - [Tooltip](https://github.com/josuapsianturi/tac/blob/master/tooltip.html)   
 ![tooltip](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/tooltip.png)
 
+ - [Tabs](https://github.com/josuapsianturi/tac/blob/master/tabs.html)   
+![tabs](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/tabs.png)
+
+
