@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <!-- Tailwind CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
+    <!-- Alpine CDN -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+<body class="bg-gray-100">
+<!-- Layout -->
+<div class="flex items-center justify-center h-screen max-w-2xl px-2 mx-auto">
+
+    <div x-data="{ tab: $persist('1')}" class="w-full rounded-md">
+        <!-- Tabs Navigation -->
+        <div class="flex justify-end px-4 pt-3 space-x-4 font-bold text-white bg-gray-600  text rounded-tr-md rounded-tl-md">
+            <button @click="tab = '1'"
+                :class="{ 'bg-gray-700 transition transform ease-in-out duration-300': tab === '1' }" 
+                class="px-4 py-2 font-bold tracking-wider rounded-tr-md rounded-tl-md">
+                Tab 1
+            </button>
+            <button @click="tab = '2'" 
+                :class="{ 'bg-gray-700 transition transform ease-in-out duration-300': tab === '2' }"  
+                class="px-4 py-2 font-bold tracking-wider rounded-tr-md rounded-tl-md">
+                Tab 2
+            </button>
+        </div>
+        <!-- End Tabs Navigation -->
+
+        <!-- Tabs Content -->
+        <div x-cloak class="flex px-4 py-2 tracking-wider text-white bg-gray-700 h-72">
+            <!-- Tab 1 -->
+            <div x-show="tab === '1'">
+                This tabs using persist plugin
+            </div>
+            <!-- End Tab 1 -->
+            <!-- Tab 2 -->
+            <div x-show="tab === '2'"
+                class="space-y-3">
+                <a href="https://alpinejs.dev/plugins/persist" class="font-semibold underline"># Persist Plugin</a>  
+                <div class="">Alpine's Persist plugin allows you to persist Alpine state across page loads.</div>  
+                <div class="">
+                    This is useful for persisting search filters, <span class="font-semibold">active tabs</span> , 
+                    and other features where users will be frustrated if their configuration is reset after refreshing or leaving and revisiting a page.
+                </div>
+            </div>
+            <!-- End Tab 2 -->
+        </div>
+        <!-- End Tabs Content -->
+    </div>
+    
+</div> 
+<!-- End Layout -->
+</body>
+</html>
