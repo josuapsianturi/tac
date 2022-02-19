@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Dropdown Animation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
-    <title>Click Dropdown Animation</title>
 </head>
+<style>
+    [x-cloak] { display: none !important;}
+</style>
 <body>
 
     <div class="bg-gray-200 flex min-h-screen items-center justify-center ">
-        <div class="inline-block relative" x-data="{open: false}">
+        <div x-cloak class="inline-block relative" x-data="{open: false}">
             <button @click="open = !open" @click.away="open = false" 
                 class="focus:outline-none shadow cursor-pointer inline-block text-gray-700 hover:text-gray-900 flex border border-gray-200 rounded p-2 pl-3 pr-1 bg-gray-100" 
                 :class="{ 'shadow-none border-gray-300': open}">
-                Click dropdown animation
+                Click dropdown
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" :class="{'-rotate-180': open}" 
                     class="ml-1 transform duration-200 inline-block fill-current text-gray-500 w-6 h-6">
                     <path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z" />

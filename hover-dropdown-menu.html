@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TAC (hover dropdown menu)</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+    <title>Hover Dropdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
   </head>
+<style>
+    [x-cloak] {display: none !important;}
+</style>
   <body>
     <!-- Layout -->
     <div class="flex items-center justify-center h-screen bg-gray-200">
         <!-- Dropdown 1 -->
-        <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block">
+        <div x-cloak x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block">
             <!-- Dropdown Toggle Button -->
             <button @mouseover="open = true" class="flex items-center px-3 py-2 bg-white rounded-lg">
-                <span class="mr-4">Dropdown</span>
+                <span class="mr-4">Hover Dropdown</span>
                 <span
                     :class="open = ! open ? '' : '-rotate-180'"
                     class="transition-transform duration-500 transform">
@@ -35,11 +38,10 @@
                 x-transition:leave-start="opacity-100 transform scale-100"
                 x-transition:leave-end="opacity-0 transform scale-90"
                 class="absolute right-0 py-1 text-gray-500 bg-white rounded-lg shadow-xl w-96">
-                <a href="#" class="block px-4 py-1 hover:text-blue-400">Lorem.</a>
-                <a href="#" class="block px-4 py-1 hover:text-blue-400">Lorem, ipsum.</a>
-                <a href="#" class="block px-4 py-1 hover:text-blue-400">Lorem, ipsum dolor.</a>
-                <a href="#" class="block px-4 py-1 hover:text-blue-400">Lorem ipsum dolor sit.</a>
-                <a href="#" class="block px-4 py-1 hover:text-blue-400">Lorem ipsum dolor sit amet.</a>
+                <a href="#" class="block px-4 py-1 hover:text-blue-400">Tailwind</a>
+                <a href="#" class="block px-4 py-1 hover:text-blue-400">Alpine</a>
+                <a href="#" class="block px-4 py-1 hover:text-blue-400">Laravel</a>
+                <a href="#" class="block px-4 py-1 hover:text-blue-400">Livewire</a>
             </div>
             <!-- End Dropdown Menu -->
         </div>

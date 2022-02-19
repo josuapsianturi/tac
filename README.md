@@ -23,5 +23,5 @@
 ![tabs](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/tabs.png)
 
 
- 6. [Click dropdown animation](https://github.com/josuapsianturi/tac/blob/master/tabs.html)   
+ 6. [Click dropdown animation](https://github.com/josuapsianturi/tac/blob/master/dropdown-animation.html)   
 ![Click dropdown animation](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/click-dropdown-animation.png)

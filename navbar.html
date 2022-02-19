@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tac - navbar</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <style>
-hr {
-    border-top: 1px solid #c5c5c5;
-}     
+[x-cloak] {display: none !important;}
+hr {border-top: 1px solid #c5c5c5;}     
 </style>
 <body>
-<nav x-data="accordion(6)"
+<nav x-cloak x-data="accordion(6)"
     class="fixed top-0 z-40 flex flex-wrap items-center justify-between w-full px-4 py-5 tracking-wide bg-white shadow-md bg-white bg-opacity-90 md:py-8 md:px-8 lg:px-14">
     <!-- Left nav -->
         <div class="flex items-center">
