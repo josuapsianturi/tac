@@ -25,3 +25,6 @@
 
  6. [Click dropdown animation](https://github.com/josuapsianturi/tac/blob/master/dropdown-animation.html)   
 ![Click dropdown animation](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/click-dropdown-animation.png)
+
+ 6. [Modal confirm](https://github.com/josuapsianturi/tac/blob/master/modal-confirm.html)   
+![Modal confirm](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-confirm.png)
