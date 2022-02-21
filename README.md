@@ -30,5 +30,6 @@
 ![Modal confirm](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-confirm.png)
 
  8. [Modal sidebar](https://github.com/josuapsianturi/tac/blob/master/modal-sidebar.html)   
-![Modal sidebar buttons](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-sidebar-buttons.png)
+![Modal sidebar buttons](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-sidebar-button.png)
+
 ![Modal sidebar](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-sidebar.png)
