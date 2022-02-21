@@ -26,5 +26,9 @@
  6. [Click dropdown animation](https://github.com/josuapsianturi/tac/blob/master/dropdown-animation.html)   
 ![Click dropdown animation](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/click-dropdown-animation.png)
 
- 6. [Modal confirm](https://github.com/josuapsianturi/tac/blob/master/modal-confirm.html)   
+ 7. [Modal confirm](https://github.com/josuapsianturi/tac/blob/master/modal-confirm.html)   
 ![Modal confirm](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-confirm.png)
+
+ 8. [Modal sidebar](https://github.com/josuapsianturi/tac/blob/master/modal-sidebar.html)   
+![Modal sidebar buttons](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-sidebar-buttons.png)
+![Modal sidebar](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-sidebar.png)
