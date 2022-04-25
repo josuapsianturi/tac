@@ -33,5 +33,5 @@
 ![Modal sidebar buttons](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-sidebar-button.png)
 ![Modal sidebar](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/modal-sidebar.png)
 
-9. [Alert](https://github.com/josuapsianturi/tac/blob/master/alert.html)
-    ![home-page](img/alert.png)
+ 9. [Alert](https://github.com/josuapsianturi/tac/blob/master/alert.html)   
+![Alert](https://raw.githubusercontent.com/josuapsianturi/tailwind-alpine-components/master/img/alert.png)
