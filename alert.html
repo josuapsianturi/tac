@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <!-- Layout -->
+        <div class="flex items-center justify-center h-screen">
+
+            <div x-data="{ open: true }" x-show="open" class="bg-green-200 px-6 py-4 border-0 rounded-lg relative mb-4">
+                <span class="text-xl inline-block mr-5 align-middle">
+                    <svg class="w-6 h-6 text-gray-700 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none" />
+                        <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M56.20305 104A71.899 71.899 0 0 1 128.5484 32.002c39.58967.29432 71.25651 33.20133 71.25651 72.90185V112c0 35.81563 7.49325 56.59893 14.093 67.95814A7.999 7.999 0 0 1 207.01628 192H48.98365A7.99908 7.99908 0 0 1 42.103 179.95641c6.60328-11.35959 14.1-32.1426 14.1-67.95641zM96 192v8a32 32 0 0 0 64 0v-8" />
+                    </svg>                
+                </span>
+                <span class="inline-block align-middle mr-8 text-green-600">
+                    This is a green alert, click x button to close it !
+                </span>
+                <button @click="open = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none">
+                    <span>×</span>
+                </button>
+            </div>
+
+        </div>
+        <!-- End Layout -->
+    
+</body>
+</html>
