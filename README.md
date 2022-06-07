@@ -4,7 +4,8 @@
 
 </h1>
 
-> Just For Fun
+> **Note**
+> Let's check all the components on codepen.io https://codepen.io/colleion/ZMKKLBct
 
 ## VIEW
 1. [Hover dropdown menu](https://github.com/josuapsianturi/tac/blob/master/hover-dropdown-menu.html)   
